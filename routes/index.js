@@ -29,6 +29,6 @@ module.exports = function (app) {
     console.dir(onlineUsersList);
 
     // Send along Session Data test test
-    res.render('index', { session: req.session, onlineUsersList: JSON.stringify(onlineUsersList)});
+    res.render('index', { session: req.session, onlineUsersList: onlineUsersList});
   });
 };
